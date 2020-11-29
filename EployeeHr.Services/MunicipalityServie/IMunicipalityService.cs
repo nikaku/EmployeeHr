@@ -1,5 +1,4 @@
-﻿using EmployeeHr.BL.Dtos.Municipality;
-using EmployeeHr.BL.Entities;
+﻿using Hr.BL.Dtos.Municipality;
 using System.Collections.Generic;
 
 namespace EployeeHr.Services.MunicipalityServie

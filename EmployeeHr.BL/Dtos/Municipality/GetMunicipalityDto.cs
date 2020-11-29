@@ -1,7 +1,7 @@
-﻿using EmployeeHr.BL.Dtos.Settlement;
+﻿using Hr.BL.Dtos.Settlement;
 using System.Collections.Generic;
 
-namespace EmployeeHr.BL.Dtos.Municipality
+namespace Hr.BL.Dtos.Municipality
 {
     public class GetMunicipalityDto
     {

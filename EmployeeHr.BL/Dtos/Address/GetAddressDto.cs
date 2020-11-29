@@ -1,6 +1,6 @@
-﻿using EmployeeHr.BL.Dtos.Settlement;
+﻿using Hr.BL.Dtos.Settlement;
 
-namespace EmployeeHr.BL.Dtos.Address
+namespace Hr.BL.Dtos.Address
 {
     public class GetAddressDto
     {

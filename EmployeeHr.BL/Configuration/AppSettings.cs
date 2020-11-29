@@ -1,4 +1,4 @@
-﻿namespace EmployeeHr.BL.Configuration
+﻿namespace Hr.BL.Configuration
 {
     public class AppSettings
     {

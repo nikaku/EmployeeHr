@@ -1,9 +1,9 @@
-﻿using EmployeeHr.BL.Dtos.Branch;
+﻿using Hr.BL.Dtos.Branch;
 using EployeeHr.Services.BranchService;
 using Microsoft.AspNetCore.Mvc;
 using System;
 
-namespace EmployeeHr.Controllers
+namespace Hr.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

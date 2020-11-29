@@ -1,7 +1,7 @@
-﻿using EmployeeHr.BL.Enums;
+﻿using Hr.BL.Enums;
 using System;
 
-namespace EmployeeHr.BL.Entities
+namespace Hr.BL.Entities
 {
     public class BankAccount
     {

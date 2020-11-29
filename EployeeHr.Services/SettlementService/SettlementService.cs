@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
-using EmployeeHr.BL.Dtos.Settlement;
-using EmployeeHr.BL.Entities;
-using EmployeeHr.BL.Interaces;
+using Hr.BL.Dtos.Settlement;
+using Hr.BL.Entities;
+using Hr.BL.Interaces;
 using System;
 using System.Collections.Generic;
 

@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using EmployeeHr.BL.Dtos.Branch;
-using EmployeeHr.BL.Entities;
+using Hr.BL.Dtos.Branch;
+using Hr.BL.Entities;
 
-namespace EmployeeHr.BL.AutomapperProfiles
+namespace Hr.BL.AutomapperProfiles
 {
     public class BranchProile : Profile
     {

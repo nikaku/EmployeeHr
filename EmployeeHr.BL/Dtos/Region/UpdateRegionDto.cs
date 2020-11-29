@@ -1,4 +1,4 @@
-﻿namespace EmployeeHr.BL.Dtos.Region
+﻿namespace Hr.BL.Dtos.Region
 {
     public class UpdateRegionDto
     {

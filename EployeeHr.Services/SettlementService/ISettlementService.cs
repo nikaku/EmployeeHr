@@ -1,5 +1,5 @@
-﻿using EmployeeHr.BL.Dtos.Settlement;
-using EmployeeHr.BL.Entities;
+﻿using Hr.BL.Dtos.Settlement;
+using Hr.BL.Entities;
 using System.Collections.Generic;
 
 namespace EployeeHr.Services.SettlementService

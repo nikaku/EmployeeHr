@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using EmployeeHr.BL.Dtos.Settlement;
-using EmployeeHr.BL.Entities;
+using Hr.BL.Dtos.Settlement;
+using Hr.BL.Entities;
 
-namespace EmployeeHr.BL.AutomapperProfiles
+namespace Hr.BL.AutomapperProfiles
 {
     public class SettlementProfile : Profile
     {

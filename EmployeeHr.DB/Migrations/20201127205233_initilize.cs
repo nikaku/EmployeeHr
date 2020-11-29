@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace EmployeeHr.DB.Migrations
+namespace Hr.DB.Migrations
 {
     public partial class initilize : Migration
     {

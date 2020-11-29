@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using EmployeeHr.BL.Dtos.Municipality;
-using EmployeeHr.BL.Entities;
+using Hr.BL.Dtos.Municipality;
+using Hr.BL.Entities;
 
-namespace EmployeeHr.BL.AutomapperProfiles
+namespace Hr.BL.AutomapperProfiles
 {
     public class MunicipalityProfile : Profile
     {

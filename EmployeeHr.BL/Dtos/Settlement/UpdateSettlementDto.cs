@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace EmployeeHr.BL.Dtos.Settlement
+namespace Hr.BL.Dtos.Settlement
 {
     public class UpdateSettlementDto
     {

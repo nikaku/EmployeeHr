@@ -1,5 +1,5 @@
-﻿using EmployeeHr.BL.Dtos.Region;
-using EmployeeHr.BL.Entities;
+﻿using Hr.BL.Dtos.Region;
+using Hr.BL.Entities;
 using System.Collections.Generic;
 
 namespace EployeeHr.Services.RegionService

@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using EmployeeHr.BL.Dtos.Address;
-using EmployeeHr.BL.Entities;
+using Hr.BL.Dtos.Address;
+using Hr.BL.Entities;
 
-namespace EmployeeHr.BL.AutomapperProfiles
+namespace Hr.BL.AutomapperProfiles
 {
     public class AddressProfile : Profile
     {

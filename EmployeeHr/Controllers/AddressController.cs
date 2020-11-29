@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using EmployeeHr.BL.Dtos.Address;
+﻿using Hr.BL.Dtos.Address;
 using EployeeHr.Services.AddressService;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
 
-namespace EmployeeHr.Controllers
+namespace Hr.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

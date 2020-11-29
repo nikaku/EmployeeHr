@@ -1,4 +1,4 @@
-﻿namespace EmployeeHr.BL.Dtos.Address
+﻿namespace Hr.BL.Dtos.Address
 {
     public class UpdateAddressDto
     {

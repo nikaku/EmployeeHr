@@ -1,6 +1,6 @@
-﻿using EmployeeHr.BL.Enums;
+﻿using Hr.BL.Enums;
 
-namespace EmployeeHr.BL.Dtos.Branch
+namespace Hr.BL.Dtos.Branch
 {
     public class UpdateBranchDto
     {

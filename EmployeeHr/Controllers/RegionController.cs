@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using EmployeeHr.BL.Dtos.Region;
+using Hr.BL.Dtos.Region;
 using EployeeHr.Services.RegionService;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace EmployeeHr.Controllers
+namespace Hr.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

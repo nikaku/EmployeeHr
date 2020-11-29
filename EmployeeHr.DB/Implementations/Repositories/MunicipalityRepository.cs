@@ -1,9 +1,9 @@
-﻿using EmployeeHr.BL.Entities;
-using EmployeeHr.BL.Interaces.Repositories;
+﻿using Hr.BL.Entities;
+using Hr.BL.Interaces.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 
-namespace EmployeeHr.DB.Implementations.Repositories
+namespace Hr.DB.Implementations.Repositories
 {
     public class MunicipalityRepository : Repository<Municipality>, IMunicipalityRepository
     {

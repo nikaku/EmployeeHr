@@ -1,10 +1,9 @@
-﻿using EmployeeHr.BL.Dtos.Settlement;
-using EmployeeHr.BL.Interaces;
+﻿using Hr.BL.Dtos.Settlement;
 using EployeeHr.Services.SettlementService;
 using Microsoft.AspNetCore.Mvc;
 using System;
 
-namespace EmployeeHr.Controllers
+namespace Hr.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

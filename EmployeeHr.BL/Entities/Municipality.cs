@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace EmployeeHr.BL.Entities
+namespace Hr.BL.Entities
 {
     public class Municipality
     {

@@ -1,4 +1,4 @@
-﻿using EmployeeHr.BL.Dtos.Address;
+﻿using Hr.BL.Dtos.Address;
 using System.Collections.Generic;
 
 namespace EployeeHr.Services.AddressService

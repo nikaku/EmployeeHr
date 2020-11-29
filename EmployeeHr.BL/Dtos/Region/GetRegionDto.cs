@@ -1,7 +1,7 @@
-﻿using EmployeeHr.BL.Dtos.Municipality;
+﻿using Hr.BL.Dtos.Municipality;
 using System.Collections.Generic;
 
-namespace EmployeeHr.BL.Dtos.Region
+namespace Hr.BL.Dtos.Region
 {
     public class GetRegionDto
     {

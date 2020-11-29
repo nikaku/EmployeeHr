@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
-using EmployeeHr.BL.Dtos.Municipality;
-using EmployeeHr.BL.Entities;
-using EmployeeHr.BL.Interaces;
+using Hr.BL.Dtos.Municipality;
+using Hr.BL.Entities;
+using Hr.BL.Interaces;
 using System;
 using System.Collections.Generic;
 

@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using EmployeeHr.BL.Dtos.Region;
-using EmployeeHr.BL.Entities;
+using Hr.BL.Dtos.Region;
+using Hr.BL.Entities;
 
-namespace EmployeeHr.BL.AutomapperProfiles
+namespace Hr.BL.AutomapperProfiles
 {
     public class RegionProfile : Profile
     {

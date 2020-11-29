@@ -1,7 +1,7 @@
-﻿using EmployeeHr.BL.Entities;
+﻿using Hr.BL.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace EmployeeHr.DB
+namespace Hr.DB
 {
     public class DataContext : DbContext
     {

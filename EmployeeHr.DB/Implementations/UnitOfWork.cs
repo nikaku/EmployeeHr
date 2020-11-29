@@ -1,9 +1,9 @@
-﻿using EmployeeHr.BL.Interaces;
-using EmployeeHr.BL.Interaces.Repositories;
-using EmployeeHr.DB.Implementations.Repositories;
+﻿using Hr.BL.Interaces;
+using Hr.BL.Interaces.Repositories;
+using Hr.DB.Implementations.Repositories;
 using System;
 
-namespace EmployeeHr.DB.Implementations
+namespace Hr.DB.Implementations
 {
     public class UnitOfWork : IUnitOfWork, IDisposable
     {

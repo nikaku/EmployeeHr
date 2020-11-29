@@ -1,6 +1,6 @@
-﻿using EmployeeHr.BL.Interaces.Repositories;
+﻿using Hr.BL.Interaces.Repositories;
 
-namespace EmployeeHr.BL.Interaces
+namespace Hr.BL.Interaces
 {
     public interface IUnitOfWork
     {

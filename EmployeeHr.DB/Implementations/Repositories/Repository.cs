@@ -1,4 +1,4 @@
-﻿using EmployeeHr.BL.Interaces.Repositories;
+﻿using Hr.BL.Interaces.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace EmployeeHr.DB.Implementations.Repositories
+namespace Hr.DB.Implementations.Repositories
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {

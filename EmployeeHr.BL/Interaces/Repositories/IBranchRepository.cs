@@ -1,6 +1,6 @@
-﻿using EmployeeHr.BL.Entities;
+﻿using Hr.BL.Entities;
 
-namespace EmployeeHr.BL.Interaces.Repositories
+namespace Hr.BL.Interaces.Repositories
 {
     public interface IBranchRepository : IRepository<Branch>
     {

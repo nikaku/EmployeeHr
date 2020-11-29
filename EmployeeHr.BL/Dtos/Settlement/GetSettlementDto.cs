@@ -1,4 +1,4 @@
-﻿namespace EmployeeHr.BL.Dtos.Settlement
+﻿namespace Hr.BL.Dtos.Settlement
 {
     public class GetSettlementDto
     {

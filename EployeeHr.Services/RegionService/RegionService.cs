@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
-using EmployeeHr.BL.Dtos.Region;
-using EmployeeHr.BL.Entities;
-using EmployeeHr.BL.Interaces;
+using Hr.BL.Dtos.Region;
+using Hr.BL.Entities;
+using Hr.BL.Interaces;
 using System;
 using System.Collections.Generic;
 

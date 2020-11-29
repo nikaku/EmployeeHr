@@ -1,9 +1,9 @@
-﻿using EmployeeHr.BL.Dtos.Municipality;
+﻿using Hr.BL.Dtos.Municipality;
 using EployeeHr.Services.MunicipalityServie;
 using Microsoft.AspNetCore.Mvc;
 using System;
 
-namespace EmployeeHr.Controllers
+namespace Hr.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

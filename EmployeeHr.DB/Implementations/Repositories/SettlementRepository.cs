@@ -1,7 +1,7 @@
-﻿using EmployeeHr.BL.Entities;
-using EmployeeHr.BL.Interaces.Repositories;
+﻿using Hr.BL.Entities;
+using Hr.BL.Interaces.Repositories;
 
-namespace EmployeeHr.DB.Implementations.Repositories
+namespace Hr.DB.Implementations.Repositories
 {
     public class SettlementRepository : Repository<Settlement>, ISettlementRepository
     {

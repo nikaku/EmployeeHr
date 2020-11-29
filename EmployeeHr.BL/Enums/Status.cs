@@ -1,4 +1,4 @@
-﻿namespace EmployeeHr.BL.Enums
+﻿namespace Hr.BL.Enums
 {
     public enum Status
     {

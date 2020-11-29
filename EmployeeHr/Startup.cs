@@ -1,11 +1,8 @@
 using AutoMapper;
-using EmployeeHr.BL.AutomapperProfiles;
-using EmployeeHr.BL.Configuration;
-using EmployeeHr.BL.Interaces;
-using EmployeeHr.BL.Interaces.Repositories;
-using EmployeeHr.DB;
-using EmployeeHr.DB.Implementations;
-using EmployeeHr.DB.Implementations.Repositories;
+using Hr.BL.Configuration;
+using Hr.BL.Interaces;
+using Hr.DB;
+using Hr.DB.Implementations;
 using EployeeHr.Services.AddressService;
 using EployeeHr.Services.BranchService;
 using EployeeHr.Services.MunicipalityServie;
@@ -18,10 +15,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using System;
-using System.Linq;
 
-namespace EmployeeHr
+namespace Hr
 {
     public class Startup
     {

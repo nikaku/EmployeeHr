@@ -1,7 +1,7 @@
-﻿using EmployeeHr.BL.Dtos.Address;
-using EmployeeHr.BL.Enums;
+﻿using Hr.BL.Dtos.Address;
+using Hr.BL.Enums;
 
-namespace EmployeeHr.BL.Dtos.Branch
+namespace Hr.BL.Dtos.Branch
 {
     public class GetBranchDto
     {

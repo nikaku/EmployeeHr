@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -14,9 +14,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EmployeeHr.BL\EmployeeHr.BL.csproj" />
-    <ProjectReference Include="..\EmployeeHr.DB\EmployeeHr.DB.csproj" />
-    <ProjectReference Include="..\EployeeHr.Services\EployeeHr.Services.csproj" />
+    <ProjectReference Include="..\EmployeeHr.BL\Hr.BL.csproj" />
+    <ProjectReference Include="..\EmployeeHr.DB\Hr.DB.csproj" />
+    <ProjectReference Include="..\EployeeHr.Services\Hr.Services.csproj" />
   </ItemGroup>
 
 

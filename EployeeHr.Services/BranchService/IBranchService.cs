@@ -1,5 +1,4 @@
-﻿using EmployeeHr.BL.Dtos.Branch;
-using EmployeeHr.BL.Entities;
+﻿using Hr.BL.Dtos.Branch;
 using System.Collections.Generic;
 
 namespace EployeeHr.Services.BranchService
