@@ -18,6 +18,7 @@ using Microsoft.OpenApi.Models;
 using Hr.Services.BankAccountService;
 using Hr.Services.DepartmentService;
 using Hr.Services.PositionService;
+using Hr.Services.BasePositionStaffEntityService;
 
 namespace Hr
 {
@@ -62,6 +63,7 @@ namespace Hr
             services.AddScoped<IBankAccountService, BankAccountService>();
             services.AddScoped<IDepartmentService, DepartmentService>();
             services.AddScoped<IPositionService, PositionService>();
+            services.AddScoped<IBasePositionStaffEntityService, BasePositionStaffEntityService>();
 
             services.AddAutoMapper(c => c.AddMaps("Hr.BL"));
 

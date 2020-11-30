@@ -28,26 +28,26 @@ namespace Hr.Services.BasePositionStaffEntityService
 
         public void Delete(int id)
         {
-            var branch = _unitOfWork.BranchRepository.Get(id);
-            if (branch != null)
+            var baseEntity = _unitOfWork.BasePositionStaffEntityRepositorty.Get(id);
+            if (baseEntity != null)
             {
-                _unitOfWork.BranchRepository.Remove(branch);
+                _unitOfWork.BasePositionStaffEntityRepositorty.Remove(baseEntity);
                 _unitOfWork.SaveChanges();
             }
         }
 
         public GetBasePositionStaffEntityDto Get(int id)
         {
-            var branch = _unitOfWork.BranchRepository.Get(id);
-            var branchDto = _mapper.Map<GetBasePositionStaffEntityDto>(branch);
+            var baseEntity = _unitOfWork.BasePositionStaffEntityRepositorty.Get(id);
+            var branchDto = _mapper.Map<GetBasePositionStaffEntityDto>(baseEntity);
             return branchDto;
         }
 
         public IEnumerable<GetBasePositionStaffEntityDto> GetAll()
         {
-            var branches = _unitOfWork.BranchRepository.GetAll();
-            var branchDtos = _mapper.Map<IEnumerable<GetBasePositionStaffEntityDto>>(branches);
-            return branchDtos;
+            var baseEntities = _unitOfWork.BasePositionStaffEntityRepositorty.GetAll();
+            var baseEntityDtos = _mapper.Map<IEnumerable<GetBasePositionStaffEntityDto>>(baseEntities);
+            return baseEntityDtos;
         }
 
         public GetBasePositionStaffEntityDto Update(UpdateBasePositionStaffEntityDto basePosition)
