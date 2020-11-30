@@ -5,10 +5,10 @@ namespace EployeeHr.Services.MunicipalityServie
 {
     public interface IMunicipalityService
     {
-        GetMunicipalityDto Add(CreateMunicipalityDto regionDto);
+        GetMunicipalityDto Add(CreateMunicipalityDto createMunicipalityDto);
         GetMunicipalityDto Get(int id);
         IEnumerable<GetMunicipalityDto> GetAll();
         void Delete(int id);
-        GetMunicipalityDto Update(UpdateMunicipalityDto region);
+        GetMunicipalityDto Update(UpdateMunicipalityDto updateMunicipalityDto);
     }
 }

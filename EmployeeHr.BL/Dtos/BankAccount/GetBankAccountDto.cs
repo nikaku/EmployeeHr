@@ -1,16 +1,16 @@
-﻿using Hr.BL.Enums;
+﻿using Hr.BL.Dtos.Branch;
+using Hr.BL.Enums;
 using System;
 
-namespace Hr.BL.Entities
+namespace Hr.BL.Dtos.BankAccount
 {
-    public class BankAccount
+    public class GetBankAccountDto
     {
         public int Id { get; set; }
         public string Code { get; set; }
         public string AccountNumber { get; set; }
         public AccountType Type { get; set; }
         public DateTime CreateDate { get; set; }
-        public Branch Branch { get; set; }
-        public int BranchId { get; set; }
+        public GetBranchDto Branch { get; set; }
     }
 }

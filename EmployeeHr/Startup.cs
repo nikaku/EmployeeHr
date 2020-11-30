@@ -15,6 +15,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using Hr.Services.BankAccountService;
+using Hr.Services.DepartmentService;
+using Hr.Services.PositionService;
 
 namespace Hr
 {
@@ -56,8 +59,11 @@ namespace Hr
             services.AddScoped<IRegionService,RegionService>();
             services.AddScoped<IMunicipalityService, MunicipalityService>();
             services.AddScoped<IAddressService, AddressService>();
+            services.AddScoped<IBankAccountService, BankAccountService>();
+            services.AddScoped<IDepartmentService, DepartmentService>();
+            services.AddScoped<IPositionService, PositionService>();
 
-            services.AddAutoMapper(c => c.AddMaps("EmployeeHr.BL"));
+            services.AddAutoMapper(c => c.AddMaps("Hr.BL"));
 
         }
 
