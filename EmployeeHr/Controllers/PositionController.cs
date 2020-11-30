@@ -23,6 +23,7 @@ namespace Hr.Controllers
         [HttpPost]
         public IActionResult Create(CreatePostionDto createPostionDto)
         {
+
             var position = _positionService.Add(createPostionDto);
             return CreatedAtAction(nameof(Get), new { id = position.Id }, position);
         }

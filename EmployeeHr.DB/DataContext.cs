@@ -19,5 +19,6 @@ namespace Hr.DB
         public DbSet<Region> Regions { get; set; }
         public DbSet<Settlement> Settlements { get; set; }
         public DbSet<BasePositionStaffEntity> BasePositionStaffEntities { get; set; }
+        public DbSet<PositionsAndDepartments> PositionsAndDepartments { get; set; }
     }
 }

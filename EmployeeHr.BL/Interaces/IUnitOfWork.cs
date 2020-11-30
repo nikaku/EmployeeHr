@@ -12,6 +12,7 @@ namespace Hr.BL.Interaces
         IPositionRepository PositionRepository { get; }
         IRegionRepository RegionRepository { get; }
         ISettlementRepository SettlementRepository { get; }
+        IBasePositionStaffEntityRepositorty BasePositionStaffEntityRepositorty { get; }
         void SaveChanges();
         void Dispose();
     }

@@ -1,5 +1,7 @@
 ﻿using Hr.BL.Entities;
 using Hr.BL.Interaces.Repositories;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace Hr.DB.Implementations.Repositories
 {
@@ -9,6 +11,17 @@ namespace Hr.DB.Implementations.Repositories
         {
 
         }
+
+        public new Position Get(int id)
+        {
+            return PositonContext.Positions
+                .Include(x => x.PositionsAndDepartments)
+                .ThenInclude(b => b.Branch)
+                .Include(x => x.PositionsAndDepartments)
+                .ThenInclude(d => d.Department)
+                .FirstOrDefault(x => x.Id == id);
+        }
+
         public DataContext PositonContext => Context as DataContext;
     }
 }

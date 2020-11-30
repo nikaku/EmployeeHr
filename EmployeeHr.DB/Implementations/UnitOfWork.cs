@@ -19,6 +19,7 @@ namespace Hr.DB.Implementations
             PositionRepository = new PositionRepository(dataContext);
             RegionRepository = new RegionRepository(dataContext);
             SettlementRepository = new SettlementRepository(dataContext);
+            BasePositionStaffEntityRepositorty = new BasePositionStaffEntityRepository(dataContext);
         }
 
         public IBranchRepository BranchRepository { get; }
@@ -36,6 +37,8 @@ namespace Hr.DB.Implementations
         public IRegionRepository RegionRepository { get; }
 
         public ISettlementRepository SettlementRepository { get; }
+
+        public IBasePositionStaffEntityRepositorty BasePositionStaffEntityRepositorty { get; }
 
         public void Dispose()
         {
