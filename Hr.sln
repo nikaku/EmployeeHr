@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hr", "EmployeeHr\Hr.csproj", "{D4C3626A-4D61-4918-AA8A-DACC526AB54C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hr.API", "Hr.API\Hr.csproj", "{D4C3626A-4D61-4918-AA8A-DACC526AB54C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hr.BL", "EmployeeHr.BL\Hr.BL.csproj", "{E666DC8A-1962-4D47-A7B9-6A325CCEC0CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hr.BL", "Hr.BL\Hr.BL.csproj", "{E666DC8A-1962-4D47-A7B9-6A325CCEC0CE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hr.DB", "EmployeeHr.DB\Hr.DB.csproj", "{C0D817BD-69F3-4F26-8B57-45C32E863A22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hr.DB", "Hr.DB\Hr.DB.csproj", "{C0D817BD-69F3-4F26-8B57-45C32E863A22}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hr.Services", "EployeeHr.Services\Hr.Services.csproj", "{C8AC9D95-9438-459C-8D47-054E07929075}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hr.Services", "Hr.Services\Hr.Services.csproj", "{C8AC9D95-9438-459C-8D47-054E07929075}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
