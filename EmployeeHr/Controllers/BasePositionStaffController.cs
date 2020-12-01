@@ -18,8 +18,15 @@ namespace Hr.Controllers
         [HttpPost]
         public IActionResult Create(CreateBasePositionStaffEntityDto createStaf)
         {
-            var staff = _staffService.Add(createStaf);
-            return CreatedAtAction(nameof(Get), new { id = staff.Id }, staff);
+            try
+            {
+                var staff = _staffService.Add(createStaf);
+                return CreatedAtAction(nameof(Get), new { id = staff.Id }, staff);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
         }
 
         [HttpGet("{id}")]

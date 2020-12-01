@@ -37,7 +37,7 @@ namespace Hr.Services.BasePositionStaffEntityService
 
             _unitOfWork.SaveChanges();
             return _mapper.Map<GetBasePositionStaffEntityDto>(basePositionInDb);
-        }         
+        }
 
         public void Delete(int id)
         {
@@ -83,6 +83,11 @@ namespace Hr.Services.BasePositionStaffEntityService
         public int VacancyCount(int positionId, int departmentId, int branchId)
         {
             var entity = _unitOfWork.PositionsAndDepartmentRepository.Find(x => x.PositionId == positionId && x.DepartmentId == departmentId && x.BranchId == branchId);
+
+            if (entity == null)
+            {
+                throw new Exception("Not Found");
+            }
 
             var maxPositions = entity.StaffNumber;
             var BasePositionStaffEntitiesId = entity.Id;

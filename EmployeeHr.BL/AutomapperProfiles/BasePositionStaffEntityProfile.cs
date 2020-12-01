@@ -18,7 +18,8 @@ namespace Hr.BL.AutomapperProfiles
                   }));
 
             CreateMap<CreateBasePositionStaffEntityDto, BasePositionStaffEntity>();
-            CreateMap<BasePositionStaffEntity, GetBasePositionStaffEntityDto>();
+            CreateMap<BasePositionStaffEntity, GetBasePositionStaffEntityDto>()
+                .ForMember(des => des.Position, opts => opts.MapFrom(src => src.Name));
         }
     }
 }
