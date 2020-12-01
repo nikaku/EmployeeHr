@@ -4,14 +4,16 @@ using Hr.DB;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Hr.DB.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20201201142058_changedMTMtable")]
+    partial class changedMTMtable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -233,12 +235,11 @@ namespace Hr.DB.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("BranchId");
+
                     b.HasIndex("DepartmentId");
 
                     b.HasIndex("PositionId");
-
-                    b.HasIndex("BranchId", "DepartmentId", "PositionId")
-                        .IsUnique();
 
                     b.ToTable("PositionsAndDepartments");
                 });

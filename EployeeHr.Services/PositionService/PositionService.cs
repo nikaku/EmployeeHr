@@ -58,7 +58,9 @@ namespace Hr.Services.PositionService
                 throw new Exception("Not Found");
             }
 
+            var position  = _mapper.Map<Position>(updatePositionDto);
             positionInDb.Name = updatePositionDto.Name;
+            positionInDb.PositionsAndDepartments = position.PositionsAndDepartments;
 
             _unitOfWork.PositionRepository.Update(positionInDb);
             _unitOfWork.SaveChanges();

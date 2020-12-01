@@ -20,25 +20,19 @@ namespace Hr.DB.Implementations
             RegionRepository = new RegionRepository(dataContext);
             SettlementRepository = new SettlementRepository(dataContext);
             BasePositionStaffEntityRepositorty = new BasePositionStaffEntityRepository(dataContext);
+            PositionsAndDepartmentRepository = new PositionsAndDepartmentRepository(dataContext);            
         }
 
         public IBranchRepository BranchRepository { get; }
-
         public IAddressRepository AddressRepository { get; }
-
         public IBankAccountRepository BankAccountRepository { get; }
-
         public IDepartmentRepository DepartmentRepository { get; }
-
         public IMunicipalityRepository MunicipalityRepository { get; }
-
         public IPositionRepository PositionRepository { get; }
-
         public IRegionRepository RegionRepository { get; }
-
         public ISettlementRepository SettlementRepository { get; }
-
         public IBasePositionStaffEntityRepositorty BasePositionStaffEntityRepositorty { get; }
+        public IPositionsAndDepartmentRepository PositionsAndDepartmentRepository { get; }
 
         public void Dispose()
         {

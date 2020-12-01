@@ -1,4 +1,5 @@
 ﻿using Hr.BL.Entities;
+using Hr.DB.EntityConfigurations;
 using Microsoft.EntityFrameworkCore;
 
 namespace Hr.DB
@@ -20,5 +21,11 @@ namespace Hr.DB
         public DbSet<Settlement> Settlements { get; set; }
         public DbSet<BasePositionStaffEntity> BasePositionStaffEntities { get; set; }
         public DbSet<PositionsAndDepartments> PositionsAndDepartments { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfiguration(new DepartmentsAndBranchesConfiguration());
+            modelBuilder.ApplyConfiguration(new PositionsAndDepartmentsConfiguration());
+        }            
     }
 }

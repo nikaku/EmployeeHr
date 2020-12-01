@@ -12,5 +12,6 @@ namespace Hr.Services.BasePositionStaffEntityService
         IEnumerable<GetBasePositionStaffEntityDto> GetAll();
         void Delete(int id);
         GetBasePositionStaffEntityDto Update(UpdateBasePositionStaffEntityDto updateBasePositionStaffEntityDto);
+        int VacancyCount(int positionId, int departmentId, int branchId);
     }
 }

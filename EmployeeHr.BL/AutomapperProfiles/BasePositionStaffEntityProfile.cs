@@ -8,7 +8,15 @@ namespace Hr.BL.AutomapperProfiles
     {
         public BasePositionStaffEntityProfile()
         {
-            CreateMap<UpdateBasePositionStaffEntityDto, BasePositionStaffEntity>();
+            CreateMap<UpdateBasePositionStaffEntityDto, BasePositionStaffEntity>().ForMember(des => des.PositionsAndDepartments, opts => opts
+                  .MapFrom(src =>
+                  new PositionsAndDepartments
+                  {
+                      BranchId = src.BranchId,
+                      DepartmentId = src.DepartmentId,
+                      PositionId = src.PositinId
+                  }));
+
             CreateMap<CreateBasePositionStaffEntityDto, BasePositionStaffEntity>();
             CreateMap<BasePositionStaffEntity, GetBasePositionStaffEntityDto>();
         }

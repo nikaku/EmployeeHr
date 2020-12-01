@@ -21,8 +21,4 @@
     <ProjectReference Include="..\EmployeeHr.BL\Hr.BL.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="EntityConfigurations\" />
-  </ItemGroup>
-
 </Project>

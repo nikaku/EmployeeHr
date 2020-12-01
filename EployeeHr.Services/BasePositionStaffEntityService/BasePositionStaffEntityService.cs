@@ -4,6 +4,7 @@ using Hr.BL.Entities;
 using Hr.BL.Interaces;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Hr.Services.BasePositionStaffEntityService
 {
@@ -20,11 +21,23 @@ namespace Hr.Services.BasePositionStaffEntityService
 
         public GetBasePositionStaffEntityDto Add(CreateBasePositionStaffEntityDto getBasePositionStaffEntityDto)
         {
+            int vacancies = VacancyCount(getBasePositionStaffEntityDto.PositinId, getBasePositionStaffEntityDto.DepartmentId, getBasePositionStaffEntityDto.BranchId);
+
+            if (vacancies == 0)
+            {
+                throw new Exception("Positions Limit Has Reached");
+            }
+
             var basePosition = _mapper.Map<BasePositionStaffEntity>(getBasePositionStaffEntityDto);
+            basePosition.PositionsAndDepartmentsId = _unitOfWork.PositionsAndDepartmentRepository.Find(x => x.BranchId == getBasePositionStaffEntityDto.BranchId
+             && x.DepartmentId == getBasePositionStaffEntityDto.DepartmentId
+             && x.PositionId == getBasePositionStaffEntityDto.PositinId).Id;
+
             var basePositionInDb = _unitOfWork.BasePositionStaffEntityRepositorty.Add(basePosition);
+
             _unitOfWork.SaveChanges();
             return _mapper.Map<GetBasePositionStaffEntityDto>(basePositionInDb);
-        }
+        }         
 
         public void Delete(int id)
         {
@@ -58,13 +71,25 @@ namespace Hr.Services.BasePositionStaffEntityService
                 throw new Exception("Not Found");
             }
 
+            var bp = _mapper.Map<BasePositionStaffEntity>(basePosition);
             basePositionInDb.Name = basePosition.Name;
-            basePositionInDb.PositionsAndDepartmentsId = basePosition.PositionsAndDepartmentsId;
-
+            basePositionInDb.PositionsAndDepartments = bp.PositionsAndDepartments;
 
             _unitOfWork.BasePositionStaffEntityRepositorty.Update(basePositionInDb);
             _unitOfWork.SaveChanges();
             return _mapper.Map<GetBasePositionStaffEntityDto>(basePositionInDb);
+        }
+
+        public int VacancyCount(int positionId, int departmentId, int branchId)
+        {
+            var entity = _unitOfWork.PositionsAndDepartmentRepository.Find(x => x.PositionId == positionId && x.DepartmentId == departmentId && x.BranchId == branchId);
+
+            var maxPositions = entity.StaffNumber;
+            var BasePositionStaffEntitiesId = entity.Id;
+
+            var positionsCount = _unitOfWork.BasePositionStaffEntityRepositorty.FindAll(x => x.PositionsAndDepartmentsId == BasePositionStaffEntitiesId).Count();
+
+            return maxPositions - positionsCount < 0 ? 0 : maxPositions - positionsCount;
         }
     }
 }
